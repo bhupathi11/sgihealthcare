@@ -188,12 +188,19 @@ footer.section {
 }
 
 footer h5 {
-    border-bottom: 2px solid #fff;
-    border-width: 50%;
+    position: relative;
     display: inline-block;
 }
 
-footer h5:hover {}
+footer h5:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -8px;
+    height: 2px;
+    width: 50px;
+    background: var(--bg-secondary);
+}
 
 .footer-link {
     position: relative;
@@ -209,7 +216,7 @@ footer h5:hover {}
     height: 2px;
     bottom: 0;
     position: absolute;
-    left: auto;
+    left: 0;
     right: 0;
     z-index: -1;
     transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
@@ -217,7 +224,7 @@ footer h5:hover {}
 }
 
 .footer-link:hover::after {
-    width: 50%;
+    width: 10%;
     left: 0;
     right: auto;
 }
