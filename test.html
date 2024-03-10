@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Navbar with Dropdown - Bootstrap 5.3</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles for dropdown */
+    .dropdown-menu {
+      border-radius: 0;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    .dropdown-item {
+      color: #333;
+    }
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+      color: #fff;
+      background-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Your Medical Services</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Diagnostic Tests</a></li>
+            <li><a class="dropdown-item" href="#">Medical Consultations</a></li>
+            <li><a class="dropdown-item" href="#">Specialized Treatments</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Health Packages</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

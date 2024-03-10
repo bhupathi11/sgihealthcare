@@ -1,0 +1,440 @@
+/* Primary color #211426 */
+/* Secondary color #9158a7 */
+:root {
+    --bg-primary: #211426;
+    --bg-secondary: #9158a7;
+    --title-color: #211426;
+    --heading-color: #9158a7;
+    --p-color: #212121;
+    --white-color: #ffffff;
+
+    --body-font-family: 'Noto Sans JP', sans-serif;
+
+    --h1-font-size: 42px;
+    --h1-mob-font-size: 32px;
+    --h2-font-size: 42px;
+    --h3-font-size: 36px;
+    --h4-font-size: 32px;
+    --h5-font-size: 24px;
+    --h6-font-size: 22px;
+    --p-font-size: 18px;
+    --copyright-text-font-size: 14px;
+    --custom-link-font-size: 12px;
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+}
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('webfont.eot');
+    /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('webfont.woff') format('woff'),
+        /* Modern Browsers */
+        url('/fonts/NunitoSans_10pt-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('webfont.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: NunitoSans;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+.bg-secondary-light {
+    background-color: #f4eef6;
+}
+
+.brand-logo {
+    width: 200px;
+}
+
+.sticky-wrapper {
+    background-color: transparent;
+}
+
+.sticky-wrapper.is-sticky nav {
+    background-color: var(--white-color);
+    box-shadow: 0px 3px 6px 0px rgba(140, 149, 159, 0.15);
+}
+
+.carousel {
+    margin-top: -90px;
+}
+
+.section .title {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.section .title:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 50px;
+    background: var(--bg-secondary);
+}
+
+/* Carousel Section */
+.carousel-inner-content {
+    position: absolute;
+    color: var(--white-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    text-align: center;
+    width: 80%;
+}
+
+.carousel-inner-content h1 {
+    font-size: var(--h1-font-size);
+    font-weight: bold;
+}
+
+.carousel-inner-content h1 span {
+    color: var(--bg-primary);
+}
+
+.carousel-inner-content h6 {
+    font-size: var(--h6-font-size);
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+/* Services Section */
+
+.services-card {
+    text-align: center;
+    box-shadow: 0 0 0 1px var(--bg-primary), 8px 8px 0 0 var(--bg-secondary);
+    transition: all 0.3s ease 0s;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-card:hover {
+    color: var(--white-color);
+    background-color: var(--bg-primary);
+    box-shadow: 0 0 0 1px var(--bg-primary), -8px -8px 0 0 var(--bg-secondary);
+    transition: all 0.3s ease 0s;
+}
+
+/* About us section */
+
+.aboutus {
+    background-color: var(--bg-primary);
+}
+
+.about-extend {
+    color: var(--white-color);
+    background-image: url('../assets/images/about-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-primary);
+    opacity: 0.8;
+}
+
+.about-extend-content {
+    position: relative;
+}
+
+.about-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.about-card i {
+    font-size: 32px;
+    color: var(--bg-secondary);
+}
+
+
+/* Footer */
+
+footer.section {
+    background-color: var(--bg-primary);
+    padding-bottom: 0rem;
+}
+
+footer h5 {
+    border-bottom: 2px solid #fff;
+    border-width: 50%;
+    display: inline-block;
+}
+
+footer h5:hover {}
+
+.footer-link {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+}
+
+.footer-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    position: absolute;
+    left: auto;
+    right: 0;
+    z-index: -1;
+    transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+    background: currentColor;
+}
+
+.footer-link:hover::after {
+    width: 50%;
+    left: 0;
+    right: auto;
+}
+
+footer hr {
+    border-top: 1px solid var(--bg-secondary)
+}
+
+.social-links i {
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+}
+
+.social-links i:hover {
+    color: var(--bg-secondary);
+    transition: all 0.3s ease 0s;
+}
+
+/* Contact */
+
+.contact-card {
+    padding: 1rem;
+    margin: 20px 0;
+    border-radius: 5px;
+    /* box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .13), 0 1px 2px 0 rgba(0, 0, 0, .11); */
+}
+
+.service-card {
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.075);
+}
+
+.service-card .service-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.service-btn {
+    font-size: 32px;
+}
+
+@media (max-width: 767px) {
+
+    .carousel-inner-content h1,
+    .section .title {
+        font-size: var(--h1-mob-font-size);
+    }
+
+    .section {
+        padding: 3rem 0.5rem;
+    }
+
+    .services-card {
+        margin: 50px auto;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .services-card:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .about-extend-content {
+        margin: 20px 0;
+    }
+
+    .about-extend-icon {
+        font-size: 32px;
+    }
+
+    .aboutus img {
+        margin: 20px 0 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .section {
+        padding: 4rem;
+    }
+
+    .carousel-inner-content h1,
+    .section .title {
+        font-size: 36px;
+    }
+
+    .services-card {
+        margin: 20px auto;
+    }
+
+    .about-extend-content {
+        margin: 15px 0;
+    }
+
+    .about-extend-icon {
+        font-size: 36px;
+    }
+
+    .aboutus img {
+        margin: 20px 0 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section {
+        padding: 5rem;
+    }
+
+    .services-card {
+        width: 90%;
+    }
+
+    .about-extend-icon {
+        font-size: 48px;
+    }
+
+    .carousel-inner-content h1,
+    .section .title {
+        font-size: var(--h1-font-size);
+    }
+}
+
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 42px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--bg-secondary);
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    color: var(--bg-secondary);
+}
+
+.form-input {
+    width: 100%;
+    min-height: 45px;
+    line-height: 30px;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f4eef6;
+    color: var(--bg-primary);
+    margin: 15px 0px 5px;
+    /* transition: .5s ease; */
+    transition: all 0.3s ease 0s;
+}
+
+.input::placeholder {
+    color: #94a3b8;
+}
+
+.form-input:focus,
+.form-input:hover {
+    outline: none;
+    border-color: var(--bg-secondary);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px #e9deed;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-toggler {
+    float: right;
+    border: none;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+    width: 20px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 2px solid var(--bg-secondary);
+    transition: all 300ms linear;
+}
+
+.navbar-light .navbar-toggler-icon:after,
+.navbar-light .navbar-toggler-icon:before {
+    width: 25px;
+    position: absolute;
+    height: 2px;
+    background-color: var(--bg-secondary);
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 2;
+    transition: all 300ms linear;
+}
+
+.navbar-light .navbar-toggler-icon:after {
+    top: 8px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: translateY(8px) rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
+}
