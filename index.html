@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
@@ -31,15 +32,14 @@
                                 <a class="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="./services.html" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Services
-                                </a>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Services</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
                                 </ul>
+
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./about.html">About us</a>
@@ -108,61 +108,217 @@
             <div class="container">
                 <div class="pb-5" data-aos="fade-up">
                     <div class="col-md-8 text-center m-auto">
-                        <h1 class="title d-inline-block" data-aos="fade-up">We Provide Services</h1>
-                        <p>Our personalized consultations encompass a comprehensive review of your medical history,
+                        <h1 class="title d-inline-block" data-aos="fade-up" data-aos-duration="5000">Our Services
+                        </h1>
+                        <p data-aos="fade-up">Our personalized consultations encompass a comprehensive review of your
+                            medical history,
                             thorough
                             examination, and collaborative discussion to develop a customized care plan that aligns with
                             your goals and preferences.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <a href="#">
-                            <div class="services-card p-5" data-aos="fade-up">
-                                <h5 data-aos="fade-up">Personalized Medical Consultations</h5>
+                <div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <a href="./onsite-doctors.html" class="w-100">
+                                            <div class="card services my-3" data-aos="fade-up">
+                                                <div class="card-services-img">
+                                                    <img src="assets/images/services/onsites.png" class="card-img-top"
+                                                        alt="...">
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fw-bold text-center">Onsite doctors</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <a href="./webinars.html" class="w-100">
+                                            <div class="card services my-3" data-aos="fade-up">
+                                                <div class="card-services-img">
+                                                    <img src="assets/images/services/webinar-activities.png"
+                                                        class="card-img-top" alt="...">
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fw-bold text-center">Webinar Activities</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <a href="./onsites.html" class="w-100">
+                                            <div class="card services my-3" data-aos="fade-up">
+                                                <div class="card-services-img">
+                                                    <img src="assets/images/services/dental-camps.png"
+                                                        class="card-img-top" alt="...">
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fw-bold text-center">Dental Camps</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <a href="./onsites.html" class="w-100">
+                                            <div class="card services my-3" data-aos="fade-up">
+                                                <div class="card-services-img">
+                                                    <img src="assets/images/services/eye-checkup.png"
+                                                        class="card-img-top" alt="...">
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fw-bold text-center">Advanced Eye Checkup</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="services-card p-5" data-aos="fade-up">
-                            <h5 data-aos="fade-up">Specialized Medical Expertise</h5>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <a href="./onsites.html" class="w-100">
+                                            <div class="card services my-3" data-aos="fade-up">
+                                                <div class="card-services-img">
+                                                    <img src="assets/images/services/onsites.png" class="card-img-top"
+                                                        alt="...">
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fw-bold text-center">Vision camps</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <a href="./onsites.html" class="w-100">
+                                            <div class="card services my-3" data-aos="fade-up">
+                                                <div class="card-services-img">
+                                                    <img src="assets/images/services/onsites.png" class="card-img-top"
+                                                        alt="...">
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fw-bold text-center">Blood Health check up
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <a href="./onsites.html" class="w-100">
+                                            <div class="card services my-3" data-aos="fade-up">
+                                                <div class="card-services-img">
+                                                    <img src="assets/images/services/onsites.png" class="card-img-top"
+                                                        alt="...">
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fw-bold text-center">X-ray</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <a href="./onsites.html" class="w-100">
+                                            <div class="card services my-3" data-aos="fade-up">
+                                                <div class="card-services-img">
+                                                    <img src="assets/images/services/onsites.png" class="card-img-top"
+                                                        alt="...">
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fw-bold text-center">PFT</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <a href="./onsites.html" class="w-100">
+                                            <div class="card services my-3" data-aos="fade-up">
+                                                <div class="card-services-img">
+                                                    <img src="assets/images/services/onsites.png" class="card-img-top"
+                                                        alt="...">
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fw-bold text-center">Audiometry</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="services-card p-5" data-aos="fade-up">
-                            <h5 data-aos="fade-up">Chronic Disease Management</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="services-card p-5" data-aos="fade-up">
-                            <h5 data-aos="fade-up">Health and Wellness Coaching</h5>
+                        <div class="swiper-pagination"></div>
+                        <div class="services-control text-center mt-3" data-aos="fade-up">
+                            <i class="bi bi-arrow-left-circle-fill services-control-prev-icon"></i>
+                            <i class="bi bi-arrow-right-circle-fill services-control-next-icon"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section aboutus text-white">
+        <section class="section services-extend">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-2 text-center">
+                            <div class="display-5">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+                            <h5 class="fw-bold my-3">Emergency Help</h5>
+                            <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-2 text-center">
+                            <div class="display-5">
+                                <i class="bi bi-capsule"></i>
+                            </div>
+                            <h5 class="fw-bold my-3">Enriched Pharmecy</h5>
+                            <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-2 text-center">
+                            <div class="display-5">
+                                <i class="bi bi-prescription2"></i>
+                            </div>
+                            <h5 class="fw-bold my-3">Medical Treatment</h5>
+                            <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section aboutus">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-6">
                         <div class="col-md-11 about-content">
                             <h1 class="title" data-aos="fade-up">About us</h1>
-                            <p data-aos="fade-up">At our medical consultancy, we prioritize your health and well-being
+                            <p data-aos="fade-up">At our medical consultancy, we prioritize your health and
+                                well-being
                                 above all else. Our
                                 team of experienced medical professionals is dedicated to providing personalized
-                                consultations to address your specific needs and concerns. Whether you're seeking advice
-                                on managing a chronic condition, optimizing your overall health, or navigating complex
+                                consultations to address your specific needs and concerns. Whether you're seeking
+                                advice
+                                on managing a chronic condition, optimizing your overall health, or navigating
+                                complex
                                 medical decisions, we're here to support you every step of the way.</p>
 
-                            <button class="btn btn-primary my-3">Know more</button>
+                            <a href="./about.html">
+                                <button class="btn btn-primary my-3">Know more</button>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6">
-                        <div>
+                        <div class="mt-3">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="assets/images/about.jpg">
-                                <img src="assets/images/about.jpg" class="w-100 rounded" data-aos="fade-up"
-                                    data-aos="fade-up">
+                                <img src="assets/images/about.jpg" class="w-100" data-aos="fade-up" data-aos="fade-up">
                             </picture>
                         </div>
                     </div>
@@ -355,6 +511,15 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".services-control-next-icon",
+                prevEl: ".services-control-prev-icon",
+            },
+        });
+    </script>
 </body>
 
 </html>
